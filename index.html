@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BlackJack</title>
+  </head>
+  <body>
+    <h1>Bienvenido al juego</h1>
+    <div class="instruccion">
+      <p>Debes pedir una carta y ganarle al Diler. <br> Gana el que tenga mayor numero sin pasarse de 21.
+      <br> Buena suerte!
+      </p>
+      <p><label>Ingresa tu nombre</label> <input type="text" name="" value="" id="nombre"></p>
+      <input type="button" name="" value="JUGAR" id="jugar" onclick="juego()">
+    </div>
+    <div class="juego">
+      <p>Tu juego</p>
+      <input type="textarea" name="" value=""id="juego_jugador">
+      <p><input type="button" name="" value="carta" id="pedir__carta" onclick="carta()"> <input type="button" name="" value="planto" id="plantar" onclick="plantar()"></p>
+    </div>
+    <div class="diler">
+      <p>Diler</p>
+      <input type="textarea" name="" value="" id="juego_diler">
+    </div>
+
+    <script src="blackjack.js"></script>
+  </body>
+</html>

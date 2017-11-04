@@ -2,10 +2,15 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>BlackJack</title>
   </head>
   <body>
-    <h1>Bienvenido al juego</h1>
+    <header>
+      <h1>Bienvenido al juego</h1>
+    </header>
+
     <div class="instruccion">
       <p>Debes pedir una carta y ganarle al Diler. <br> Gana el que tenga mayor numero sin pasarse de 21.
       <br> Buena suerte!
@@ -16,15 +21,26 @@
     <div class="juego">
       <p>Tu juego</p>
       <input type="textarea" name="" value=""id="juego_jugador">
-      <p><input type="button" name="" value="carta" id="pedir__carta" onclick="carta()"> <input type="button" name="" value="planto" id="plantar" onclick="plantar()"></p>
+      <p id="botones_jugador"><input type="button" name="" value="carta" id="pedir__carta" onclick="carta()"> <input type="button" name="" value="planto" id="plantar" onclick="plantar()"></p>
     </div>
     <div class="diler">
       <p>Diler</p>
       <input type="textarea" name="" value="" id="juego_diler">
     </div>
     <div class="nuevo_juego">
-      <p><input type="button" name="" value="VOLVER A JUGAR" onclick="window.location.reload()"></p>
+      <p><input type="button" name="" value="VOLVER A JUGAR" onclick="window.location.reload()" id="nuevo"></p>
     </div>
+
+    <footer>
+      <div class="social2">
+        <a href="https://www.facebook.com/royne.chaves"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/roynechaves"><i class="fa fa-twitter"></i></a>
+        <a href="https://github.com/royne"><i class="fa fa-github"></i></a>
+        <h6>royne.alexander.chaves@gmail.com</h6>
+        <h6>©Royne Chaves</h6>
+      </div>
+    </footer>
+
     <script src="blackjack.js"></script>
   </body>
 </html>

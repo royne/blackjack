@@ -15,13 +15,13 @@
       <p>Debes pedir una carta y ganarle al Diler. <br> Gana el que tenga mayor numero sin pasarse de 21.
       <br> Buena suerte!
       </p>
-      <p><label>Ingresa tu nombre</label> <input type="text" name="" value="" id="nombre"></p>
+      <p><label>Ingresa tu nombre</label> <input type="text" name="" value="" id="nombre"/><button id="confrimar_nombre" onclick="nombre_confirmar()">Confirmar</button></p>
       <input type="button" name="" value="JUGAR" id="jugar" onclick="juego()">
     </div>
     <div class="juego">
       <p>Tu juego</p>
       <input type="textarea" name="" value=""id="juego_jugador">
-      <p id="botones_jugador"><input type="button" name="" value="carta" id="pedir__carta" onclick="carta()"> <input type="button" name="" value="planto" id="plantar" onclick="plantar()"></p>
+      <p id="botones_jugador"><input type="button" name="" value="carta" id="pedir__carta"  onclick="carta()"> <input type="button" name="" value="planto" id="plantar" onclick="plantar()"></p>
     </div>
     <div class="diler">
       <p>Diler</p>
@@ -40,7 +40,9 @@
         <h6>©Royne Chaves</h6>
       </div>
     </footer>
+    <button onclick="jhon()">hola</button>
 
     <script src="blackjack.js"></script>
+    <!--<script src="javas.js"></script>-->
   </body>
 </html>
